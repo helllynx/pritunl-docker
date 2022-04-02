@@ -24,13 +24,14 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - 8080:80
-      - 4443:443
       - 9700:9700
+      - 8080:80
+      - 4433:443
       - 1194:1194
       - 1194:1194/udp
       - 1195:1195/udp
+      - 19270:19270
+      - 19270:19270/udp
     environment:
       - TZ=UTC
       - REVERSE_PROXY=true
-      - WIREGUARD=false
