@@ -32,6 +32,8 @@ services:
       - 1195:1195/udp
       - 19270:19270
       - 19270:19270/udp
+      - 13824:13824
+      - 13824:13824/udp
     environment:
       - TZ=UTC
       - REVERSE_PROXY=true
